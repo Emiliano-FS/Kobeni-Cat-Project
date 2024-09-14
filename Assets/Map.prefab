@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4748706538091855525
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4748706538091855523}
+  - component: {fileID: 4748706538091855522}
+  m_Layer: 0
+  m_Name: Map
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4748706538091855523
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4748706538091855525}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4748706538091855522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4748706538091855525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35cf6a34c748f724db310900a4831ed6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tileTypes:
+  - name: Default
+    tileVisualPrefab: {fileID: 3624949257286207622, guid: 7254dc7f44379e840ab47a99eb12a4bf, type: 3}
+    isWalkable: 1
+    isWalkableU: 1
+    occupied: 0
+    isMobile: 0
+    movementCost: 1
+  - name: Mesa
+    tileVisualPrefab: {fileID: 8099018309904628057, guid: ae85d299e95559343b0b84522805aab5, type: 3}
+    isWalkable: 0
+    isWalkableU: 0
+    occupied: 0
+    isMobile: 1
+    movementCost: 1
+  - name: MesaNoMobible
+    tileVisualPrefab: {fileID: 5466588609835242146, guid: 503aaf71e1a223848a61d6b5be527632, type: 3}
+    isWalkable: 0
+    isWalkableU: 0
+    occupied: 1
+    isMobile: 0
+    movementCost: 1
+  - name: Kwmo
+    tileVisualPrefab: {fileID: 8666171435378901237, guid: 819a8ec24d3422f4d96b6cc256ea491b, type: 3}
+    isWalkable: 0
+    isWalkableU: 1
+    occupied: 0
+    isMobile: 1
+    movementCost: 2
+  - name: DefaultOcupada
+    tileVisualPrefab: {fileID: 3624949257286207622, guid: 7254dc7f44379e840ab47a99eb12a4bf, type: 3}
+    isWalkable: 1
+    isWalkableU: 1
+    occupied: 1
+    isMobile: 0
+    movementCost: 1
+  - name: Kwmo
+    tileVisualPrefab: {fileID: 8666171435378901237, guid: 9ad7f6b60b199ac40a17d4362e27f296, type: 3}
+    isWalkable: 0
+    isWalkableU: 1
+    occupied: 0
+    isMobile: 1
+    movementCost: 2
+  - name: Kwmo
+    tileVisualPrefab: {fileID: 8666171435378901237, guid: 479f7472ccc3ff94dafff5c8412221f2, type: 3}
+    isWalkable: 0
+    isWalkableU: 1
+    occupied: 0
+    isMobile: 1
+    movementCost: 2
+  - name: Kwmo
+    tileVisualPrefab: {fileID: 8666171435378901237, guid: 636e815d2f3e11e4fb4998d389109c82, type: 3}
+    isWalkable: 0
+    isWalkableU: 1
+    occupied: 0
+    isMobile: 1
+    movementCost: 2
+  - name: Kwmo
+    tileVisualPrefab: {fileID: 8666171435378901237, guid: ceea6d746faf7d74e878c8d4f9e9c31a, type: 3}
+    isWalkable: 0
+    isWalkableU: 1
+    occupied: 0
+    isMobile: 1
+    movementCost: 2
+  npcs:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

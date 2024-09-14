@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{bddf6828-0160-8101-08d0-a16fca1020d2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PandaBehaviour", "PandaBehaviour.csproj", "{955378d2-06cf-aa48-cb47-79b1c2e79e87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PandaBehaviourEditor", "PandaBehaviourEditor.csproj", "{9709426c-0b71-68f8-4d0b-680667f37d4b}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{bddf6828-0160-8101-08d0-a16fca1020d2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{bddf6828-0160-8101-08d0-a16fca1020d2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{955378d2-06cf-aa48-cb47-79b1c2e79e87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{955378d2-06cf-aa48-cb47-79b1c2e79e87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9709426c-0b71-68f8-4d0b-680667f37d4b}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9709426c-0b71-68f8-4d0b-680667f37d4b}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,9 @@
+tree("Root")
+	while BadHealhtStatus
+		sequence
+			RecoveryMode
+			DectivateShield
+			while DangerStatus
+				sequence
+					Wait(2.5)
+					UpdateHealth

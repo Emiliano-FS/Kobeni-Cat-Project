@@ -1,0 +1,19 @@
+tree("Root")
+	sequence
+		Wait(1.0)
+		FanAiming
+		Wait(0.8)
+		FanAiming
+		Wait(0.8)
+		FanAiming
+		Wait(0.8)
+		FanAiming
+		Wait(0.8)
+		FanShooting
+		Wait(0.15)
+		FanShooting
+		Wait(0.15)
+		FanShooting
+		Wait(0.15)
+		FanShooting
+		Wait(0.15)

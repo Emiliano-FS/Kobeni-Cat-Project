@@ -1,0 +1,12 @@
+tree("Root")
+	sequence
+		Wait(1.0)
+		TrackPlayerReticule
+		Wait(0.2)
+		TrackPlayerReticule
+		Wait(0.2)
+		TrackPlayerReticule
+		Wait(0.2)
+		TrackPlayerReticule
+		Wait(0.4)
+		ShootPlayer

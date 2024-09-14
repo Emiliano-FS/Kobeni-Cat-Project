@@ -1,0 +1,178 @@
+tree("Root")
+	while Iniciar
+		parallel
+			fallback
+				tree("Dead")
+				tree("Behaviour")
+
+tree("Behaviour")
+	sequence
+		ChooseDificulty
+		fallback
+			tree("Easy")
+			tree("Medium")
+			tree("Hard")
+
+tree("Dead")
+	while Dead
+		sequence
+			Kill
+
+tree("Easy")
+	while EasyMode
+		fallback
+			sequence
+				RecoveryModeReverse
+				Wait(1.0)
+				ActivateShield
+				Wait(1.0)
+				tree("TrackShot")
+				Wait(1.0)
+				tree("CrossAttack")
+				Wait(1.0)
+				random
+					tree("TrackShot")
+					tree("CrossAttack")
+					tree("FanShot")
+				Wait(1.0)
+				DectivateShield
+				Wait(4.0)
+				tree("Recovery")
+				ActivateShield
+
+tree("Medium")
+	while MediumMode
+		fallback
+			sequence
+				RecoveryModeReverse
+				Wait(1.0)
+				ActivateShield
+				Wait(1.0)
+				tree("FanShot")
+				Wait(1.0)
+				tree("CrossAttack")
+				Wait(1.0)
+				tree("FanShot")
+				Wait(1.0)
+				random
+					tree("CrossAttack")
+					tree("FanShot")
+					tree("ReloadShot")
+				Wait(1.0)
+				DectivateShield
+				Wait(4.0)
+				random
+					tree("Recovery")
+					ActivateShield
+
+tree("Hard")
+	while HardMode
+		fallback
+			sequence
+				RecoveryModeReverse
+				Wait(0.5)
+				ActivateShield
+				Wait(0.5)
+				tree("ReloadShot")
+				Wait(0.5)
+				tree("CrossAttack")
+				Wait(0.5)
+				tree("ReloadShot")
+				Wait(0.5)
+				tree("CrossAttack")
+				Wait(0.5)
+				random
+					tree("CrossAttack")
+					tree("FanShot")
+					tree("ReloadShot")
+				Wait(1.0)
+				DectivateShield
+				Wait(4.0)
+				random
+					tree("Recovery")
+					ActivateShield
+
+tree("Recovery")
+	while BadHealhtStatus
+		sequence
+			ActivateShield
+			Wait(0.5)
+			RecoveryMode
+			Wait(0.5)
+			DectivateShield
+			fallback
+				while DangerStatus
+					repeat 100
+						tree("Heal")
+
+tree("Heal")
+	sequence
+		Wait(1.0)
+		UpdateHealth
+
+
+tree("TrackShot")
+	sequence
+		Wait(1.0)
+		TrackPlayerReticule
+		Wait(0.2)
+		TrackPlayerReticule
+		Wait(0.2)
+		TrackPlayerReticule
+		Wait(0.2)
+		TrackPlayerReticule
+		Wait(0.4)
+		ShootPlayer
+		Wait(1.0)
+
+tree("FanShot")
+	sequence
+		Wait(1.0)
+		FanAiming
+		Wait(0.8)
+		FanAiming
+		Wait(0.8)
+		FanAiming
+		Wait(0.8)
+		FanAiming
+		Wait(0.3)
+		FanShooting
+		Wait(0.15)
+		FanShooting
+		Wait(0.15)
+		FanShooting
+		Wait(0.15)
+		FanShooting
+		Wait(0.15)
+
+tree("ReloadShot")
+	sequence
+		Wait(1.0)
+		TrackPlayerReticule
+		Wait(0.4)
+		ShootPlayer
+		TrackPlayerReticule
+		Wait(0.4)
+		ShootPlayer
+		TrackPlayerReticule
+		Wait(0.4)
+		ShootPlayer
+		TrackPlayerReticule
+		Wait(0.4)
+		ShootPlayer
+		Wait(0.4)
+		Reload
+		Wait(0.5)
+
+tree("CrossAttack")
+	sequence
+		Wait(1.5)
+		WarningX
+		Wait(0.5)
+		WarningY
+		Wait(0.2)
+		DamageX
+		Wait(0.2)
+		DamageY
+		Wait(1.0)
+		Clean

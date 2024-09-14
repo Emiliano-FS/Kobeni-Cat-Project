@@ -1,0 +1,12 @@
+tree("Root")
+	sequence
+		Wait(1.5)
+		WarningX
+		Wait(0.5)
+		WarningY
+		Wait(0.2)
+		DamageX
+		Wait(0.2)
+		DamageY
+		Wait(1.0)
+		Clean

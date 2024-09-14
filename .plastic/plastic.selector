@@ -1,0 +1,4 @@
+repository "Kobeni Cat Proyect@EmilianoFS@cloud"
+  path "/"
+    br "/main"
+    co "/main"
